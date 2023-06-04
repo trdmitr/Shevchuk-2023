@@ -10,7 +10,7 @@ import CaverContent from './CaverContent';
 import { useSelector } from 'react-redux';
 import useFetch from '../API/useFetch';
 import RoundLoader from '../Loader/RoundLoader';
-// import {store} from '../../Redux/store.js';
+import {store} from '../../Redux/store.js';
 export const CaverPage = () => {
   const [modal, setModal] = useState(false);
   const location = useLocation();
@@ -31,17 +31,18 @@ const loading_songs
         ({ songs_reducer: { loading_songs
         } }) => loading_songs
     );
-    // if (loading_songs.length === 0) {
+    // if (loading_songs) {
     //   return <div className='loadBlock'><RoundLoader /></div>
     // }
-     if(loading_songs) return null;
-  // const navigatorState = store.getState()
-  // console.log("store", all_songs);
+    //  if(loading_songs) return null;
+  const navigatorState = store.getState()
+  console.log("store", navigatorState);
   return (
     <div className="device device-iphone-x">
       <div className="device-frame">
         <div className="device-content">
           <div className={classes.row}>
+            
             <Modal visible={modal} setVisible={setModal}>
               <About />
             </Modal>
@@ -49,10 +50,13 @@ const loading_songs
               <span role="img" aria-label="emoji name"> 📌 </span>
             </PlayButton>
             <div className={classes.column50}>
-            {loading_songs.length === 0 ? <div className='loadBlock'><RoundLoader /></div> :
-              <CaverContent loading_songs = {loading_songs} all_songs = {all_songs} />}
+            
+              <CaverContent loading_songs = {loading_songs} all_songs = {all_songs} />
+              
             </div>
-            <Player />
+            {loading_songs ? <h1>...</h1>  :
+            <Player />}
+            
           </div>
           <Link to="/"><button className={classes.btnHome}>Главная</button></Link>
         </div>

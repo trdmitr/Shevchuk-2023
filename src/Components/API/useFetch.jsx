@@ -7,8 +7,9 @@ const useFetch = (url, options) => {
   
   function fetchNow(url) {
     // setStatus({ loading: true });
+
     dispatch(loading_songs(true))
-   
+  //  setTimeout(() => {
     Papa.parse(url,
         {
          download: true,
@@ -16,6 +17,9 @@ const useFetch = (url, options) => {
          complete: (results) => {
             // setStatus({ loading: false, data: results.data })
             // timeOut(5000)
+            
+              
+            
             dispatch(songs_are_loaded(results.data))
             
             dispatch(loading_songs(false))
@@ -28,6 +32,7 @@ const useFetch = (url, options) => {
            dispatch(fetchDataError("error"))
        }
        })
+      //  }, 1000);
   }
   useEffect(() => {
     if (url) {

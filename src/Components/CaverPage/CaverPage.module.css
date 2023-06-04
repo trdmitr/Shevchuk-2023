@@ -45,7 +45,7 @@
     font-size: 1.7em;
     font-weight: bold;
     /* color: var(--colorText); */
-    /* background-color: var(--buttonBack); */
+    background-color: var(--buttonBack);
     border-radius: 0.5em;
     border-top-left-radius: 0em;
     border-top-right-radius: 0em;
