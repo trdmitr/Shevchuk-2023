@@ -7,6 +7,7 @@ const About = () => {
         <p>Авторы: MaKriDi media group</p>
         <p>Контакты</p>
         <p>trdmitr@gmail.com</p>
+        {/* <bu style={{color: "white"}} href="https://trdmitr.github.io/alltributes/#/" target="_blank" rel="noopener noreferrer"> Все трибьюты </bu>  */}
     </div>
     
   )

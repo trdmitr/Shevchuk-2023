@@ -1,5 +1,5 @@
 import React from 'react'
-import classes from "../components.module.css"
+import classes from "../SingContent/SingContent.module.css"
 import ReactPlayer from 'react-player';
 
 

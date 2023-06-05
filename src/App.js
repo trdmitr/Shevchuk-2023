@@ -5,9 +5,6 @@ import { HashRouter as Router, Routes, Route, useLocation, Link } from "react-ro
 import { HomePage } from './Components/HomePage/HomePage';
 import { CaverPage } from './Components/CaverPage/CaverPage';
 import SinglPage from './Components/SingContent/SinglPage';
-// import useFetch from './Components/API/useFetch';
-// import { useSelector } from 'react-redux';
-// import {store} from "./Redux/store";
 function NotFound() {
   let location = useLocation();
   return (
@@ -21,17 +18,6 @@ function NotFound() {
 }
 function App() {
 
-  // const urlParse = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTyhVKUWoUKLuI26hf5kZcEXRwjdGqscy0GDiNGCbHfzWiW7QQ_m2lrhyiQUKzZ7_9vLBgIPE7WMwXM/pub?output=csv";
-
-  // useFetch(urlParse)
- 
-  // const loading_songs = useSelector(
-  //   ({ songs_reducer: { loading_songs } }) => loading_songs
-  // );
- 
-  // if(loading_songs) return null
-  // const navigatorState = store.getState()
-  // console.log("store", navigatorState);
   return (
     <div className="App">
       <Fragment>

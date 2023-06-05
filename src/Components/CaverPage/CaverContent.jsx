@@ -3,12 +3,8 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import classes from "./CaverPage.module.css"
 import RoundLoader from '../Loader/RoundLoader';
-// import { useSelector } from 'react-redux';
-// import RoundLoader from '../Loader/RoundLoader';
 const CaverContent = ({all_songs, loading_songs}) => {
-    // if (loading_songs)
-    // return <h1>...</h1>
-    
+
     return  all_songs.map((song) => {
         const {photo, name, id} = song
         return (

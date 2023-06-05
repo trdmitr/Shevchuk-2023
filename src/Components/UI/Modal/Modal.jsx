@@ -10,8 +10,8 @@ const Modal = ({children, visible, setVisible}) => {
     }
 
     return (
-        <div className={rootClasses.join(' ')} onClick={() => setVisible(false)}>
-            <div className ={cl.myModalContent}>
+        <div className={rootClasses.join(' ')} >
+            <div className ={cl.myModalContent} onClick={() => setVisible(false)}>
                 {children}
             </div>
         </div>

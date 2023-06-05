@@ -1,6 +1,6 @@
 import React, {Fragment} from 'react'
 import { useParams } from "react-router";
-import classes from "../components.module.css"
+import classes from "./SingContent.module.css"
 import { Link, useNavigate } from 'react-router-dom'
 import { audioSource, tzitata, videoSource } from '../Hooks/utils';
 import { useSelector } from 'react-redux';
@@ -11,12 +11,12 @@ const SingContent = () => {
       const currSings = useSelector(
         ({ songs_reducer: { all_songs } }) => all_songs.filter(results => results.id === params.id)
       );
-      console.log("ALL_PROD", currSings)
+      // console.log("ALL_PROD", currSings)
     if (!currSings.length) {
         return (
           <div className='loadBlock'>
             <RoundLoader />
-            <Link to="/"><button className={classes.btnError}>На главную</button></Link>
+            <Link to="/"><button className={classes.btnError}> На главную!</button></Link>
           </div>
         )
       }

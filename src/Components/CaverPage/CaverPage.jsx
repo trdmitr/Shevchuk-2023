@@ -9,8 +9,8 @@ import PlayButton from '../UI/Modal/PlayButton';
 import CaverContent from './CaverContent';
 import { useSelector } from 'react-redux';
 import useFetch from '../API/useFetch';
-import RoundLoader from '../Loader/RoundLoader';
-import {store} from '../../Redux/store.js';
+// import {store} from '../../Redux/store.js';
+import Loader from '../Loader/Loader';
 export const CaverPage = () => {
   const [modal, setModal] = useState(false);
   const location = useLocation();
@@ -18,7 +18,8 @@ export const CaverPage = () => {
   const urlParse21 = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSJpAqJmngxzKzdpaHbqA9kxuJkx0eljTICVi0qJ6Qk6-1YcpFBitfQOV2C2qHZ9uZF04zeNLYUSXov/pub?output=csv"
   const urlParse22 = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTqMSBKbaIPUyfikTyHNpByUzLbxWxChMy96gx1a7WKMXFGNydi2ZTgotnDwgbhLjGkXuTlhGGgsKZ8/pub?output=csv";
   // ДДТ-2022 НОРМ
-  const urlParse23 = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSpPQhfjT4O_x-GEXItq61IRLur3F1qXAvP0i-ERlrIPB8Oz-FIrYle1aXZtUdmbK-kycI651UbJTAP/pub?output=csv";
+  // const urlParse23 = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSpPQhfjT4O_x-GEXItq61IRLur3F1qXAvP0i-ERlrIPB8Oz-FIrYle1aXZtUdmbK-kycI651UbJTAP/pub?output=csv";
+  const urlParse23 = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRhlDODyncSUfe3jagFmcINmAn2-k2h4Yp1cIJPX0-B9bNyrqIVCOZyTCJpaU38pns0C6qnR7GMmuAF/pub?output=csv"
   const urlLoc = location.pathname;
   
   const currUrl = urlLoc.includes('cavers21') ? urlParse21 : urlLoc.includes('cavers22') ? urlParse22 : urlLoc.includes('cavers23') ? urlParse23 : "";
@@ -31,12 +32,9 @@ const loading_songs
         ({ songs_reducer: { loading_songs
         } }) => loading_songs
     );
-    // if (loading_songs) {
-    //   return <div className='loadBlock'><RoundLoader /></div>
-    // }
-    //  if(loading_songs) return null;
-  const navigatorState = store.getState()
-  console.log("store", navigatorState);
+
+  // const navigatorState = store.getState()
+  // console.log("store", navigatorState);
   return (
     <div className="device device-iphone-x">
       <div className="device-frame">
@@ -54,7 +52,10 @@ const loading_songs
               <CaverContent loading_songs = {loading_songs} all_songs = {all_songs} />
               
             </div>
-            {loading_songs ? <h1>...</h1>  :
+            <a style={{color: "white"}} href="https://trdmitr.github.io/alltributes/" target="_blank" rel="noopener noreferrer">
+        <button >Все трибьюты </button>
+      </a>
+            {loading_songs ? <div className='loadBlock'><Loader/></div>  :
             <Player />}
             
           </div>

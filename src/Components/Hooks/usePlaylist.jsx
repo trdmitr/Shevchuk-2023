@@ -1,24 +1,8 @@
-import React, { useEffect, useState } from 'react'
+import  { useEffect, useState } from 'react'
 // import { useSelector } from 'react-redux';
 const usePlaylist = (songs) => {
     const [audioList, setStatus] = useState();
-    // const songs = useSelector(
-    //     ({ songs_reducer: { all_songs } }) => all_songs
-    //   );
-    
-    //  function loggerMy (foo) {
-    //     console.log(foo)
-    //  }
-    //  const loMy = loggerMy
-     
-    // if (songs.length === 0) {
-    //     return <div>LOAD...</div>
-    // }
-    // loMy(songs)
-    // if (songs.length === 0) {
-    //     return <div>....</div>
-    // }
-    // console.log(songs)
+   
     
     useEffect(() => {
         if (songs) {

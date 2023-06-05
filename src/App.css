@@ -2,27 +2,10 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+
+
 
 
 .device,
@@ -54,12 +37,12 @@
 	width: 342px;
 }
 .device-iphone-x .device-content {
-	background-color: #fff;
-	/* background-blend-mode: multiply;   */
-	background: 
-		repeating-linear-gradient(floralwhite, floralwhite 10px, lightcoral 10px, lightcoral 15px, floralwhite 15px, floralwhite 20px, lightcoral 15px, lightcoral 40px, floralwhite 40px, floralwhite 45px, lightcoral 45px, lightcoral 50px, floralwhite 50px, floralwhite 80px),
-		repeating-linear-gradient(90deg, floralwhite, floralwhite 10px, lightcoral 10px, lightcoral 15px, floralwhite 15px, floralwhite 20px, lightcoral 15px, lightcoral 40px, floralwhite 40px, floralwhite 45px, lightcoral 45px, lightcoral 50px, floralwhite 50px, floralwhite 80px);
-		
+	background-color: #6d6875;
+	background-image: 
+		linear-gradient(135deg, rgba(109,104,117, 0.2) 0%, rgba(255,180,162, 0.1) 25%, rgba(109,104,117, 0.2) 50%, rgba(255,180,162, 0.1) 75%, rgba(109,104,117, 0.2) 100%), 
+		linear-gradient(90deg, #6d6875, #b5838d, #e5989b, #ffb4a2, #ffcdb2);
+	background-size: 6px 6px, 100%;
+	
 	/* background-image: url("https://media1.popsugar-assets.com/files/thumbor/xRjhuuBdFaAu-rBmgFsQdm7_r8s/fit-in/1024x1024/filters:format_auto-!!-:strip_icc-!!-/2020/09/23/953/n/1922507/c3018d08a1be257e_pexels-sharon-mccutcheon-3713892/i/ios-14-wallpaper-ideas.jpg"); */
 	background-position: center center;
 	background-size: cover;
