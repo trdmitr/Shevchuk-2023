@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/shevchuk-2023/precache-manifest.6b64d58598d2b3da8415d8c3b03b9722.js"
+  "/Shevchuk-2023/precache-manifest.461a332cf714c7de97fadb0c832eae9f.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/shevchuk-2023/index.html", {
+workbox.routing.registerNavigationRoute("/Shevchuk-2023/index.html", {
   
   blacklist: [/^\/_/,/\/[^/]+\.[^/]+$/],
 });
