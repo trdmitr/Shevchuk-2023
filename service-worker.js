@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/Shevchuk-2023/precache-manifest.461a332cf714c7de97fadb0c832eae9f.js"
+  "/Shevchuk-2023/precache-manifest.dd2a1d19a622a5637f888be7e1a996ce.js"
 );
 
 workbox.clientsClaim();

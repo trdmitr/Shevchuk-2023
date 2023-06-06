@@ -1,10 +1,10 @@
 self.__precacheManifest = [
   {
-    "revision": "7000a5ca02326c4bdb63",
-    "url": "/Shevchuk-2023/static/css/main.562423c2.chunk.css"
+    "revision": "ce1b2554a93a4da665df",
+    "url": "/Shevchuk-2023/static/css/main.866f5d61.chunk.css"
   },
   {
-    "revision": "7000a5ca02326c4bdb63",
+    "revision": "ce1b2554a93a4da665df",
     "url": "/Shevchuk-2023/static/js/main.39aef55a.chunk.js"
   },
   {
@@ -28,7 +28,7 @@ self.__precacheManifest = [
     "url": "/Shevchuk-2023/static/media/jakobctt_8b806cbf869f1c45daf1949a025cd519.f57c1202.woff"
   },
   {
-    "revision": "d09b4eecb7d6b909629b9de62819107b",
+    "revision": "fd135a80cd2e4f8a81bb4a8526903360",
     "url": "/Shevchuk-2023/index.html"
   }
 ];
